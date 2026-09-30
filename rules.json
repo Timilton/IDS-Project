@@ -1,0 +1,27 @@
+[
+  {
+    "id": "SSH_ATTEMPT",
+    "protocol": "tcp",
+    "dst_port": 22,
+    "severity": "medium"
+  },
+  {
+    "id": "TELNET_ATTEMPT",
+    "protocol": "tcp",
+    "dst_port": 23,
+    "severity": "high"
+  },
+  {
+    "id": "HTTP_ADMIN_ACCESS",
+    "protocol": "tcp",
+    "dst_port": 80,
+    "payload_contains": "/admin",
+    "severity": "high"
+  },
+  {
+    "id": "DNS_QUERY",
+    "protocol": "udp",
+    "dst_port": 53,
+    "severity": "low"
+  }
+]
